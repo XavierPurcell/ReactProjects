@@ -1,0 +1,35 @@
+[33mcommit 55d1075430b1bceed8bb7a402de8e7b0b725ac7f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Fri Jan 15 14:41:52 2021 +1100
+
+    movie Search added, change folder structure
+
+[33mcommit c07cc3731f9ea65e75b621be7a8c644acf0b1aab[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Mon Jan 11 03:54:58 2021 +1100
+
+    pathfinding and sorting all working sugoi
+
+[33mcommit 3b3883b4d345adf8069bc6a4ed8527237cce1d94[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Sun Jan 10 19:16:59 2021 +1100
+
+    changingMerge
+
+[33mcommit 6116f6bf3b4cac59866a20daca75770cbf4c81bc[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Fri Jan 8 15:03:00 2021 +1100
+
+    Added Working A Star
+
+[33mcommit 9a9e3fa8769753da6d31171a40b502c1ea1669d8[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Tue Jan 5 04:55:54 2021 +1100
+
+    big changes
+
+[33mcommit c9dbc2c102047c62520454fcd5bde9a76b6f9888[m
+Author: iamxavier <iamxavier@hotmail.com>
+Date:   Tue Dec 22 07:44:29 2020 +1100
+
+    Initialize project using Create React App

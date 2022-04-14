@@ -1,0 +1,166 @@
+.array-container {
+  /* margin-top: 25px;*/
+  /*margin-bottom: 25px;*/
+  height: 710px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*
+.array-bar {
+  width: 2px;
+  display: inline-block;
+  margin: 0 1px;
+  background-color: blue;
+}*/
+
+button.redActive:active,
+button.redActive:focus,
+button.redActive {
+  background-color: red !important;
+}
+
+button.yellowActive:active,
+button.yellowActive:focus,
+button.yellowActive {
+  background-color: yellow !important;
+}
+
+button.blueActive:active,
+button.blueActive:focus {
+  background-color: blue !important;
+}
+
+button.brownActive:active,
+button.brownActive:focus {
+  background-color: #1b1c1d !important;
+}
+
+body {
+  background-color: #1b1c1d !important;
+}
+
+.array-bar {
+  height: 237px;
+  width: 7px;
+  margin-left: 3px;
+  background-color: rgba(66, 134, 244, 0.8);
+  color: transparent;
+  display: inline-block;
+  font-size: 8px;
+}
+
+.blackBC {
+  background-color: #1b1c1d !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  margin-top: 0px !important;
+}
+
+.centerContent {
+  max-width: 900px;
+  margin: auto !important;
+}
+
+.item {
+  background-color: #1b1c1d !important;
+  color: white !important;
+}
+
+.resetButton {
+  margin-top: 25px;
+}
+
+.marginLayout {
+  margin: 0px;
+}
+
+.bottomItem {
+  align-self: end;
+}
+
+.largerButtonText {
+  font-size: 1.2em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.userButtons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* slider */
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.container {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: black;
+}
+
+.containerPathFinding {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: black;
+  padding-bottom: 90px;
+}
+.buttonBlock {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 15px;
+  height: 10px;
+  display: inline-block;
+}
+
+input {
+  max-width: 100%;
+}
+
+.twoEnds {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.speed {
+  background: #d3d3d3;
+  appearance: none;
+  outline: none;
+  opacity: 0.7;
+  width: 100%;
+  height: 5px;
+  opacity: 1;
+  outline: none;
+  margin: 0 auto;
+}
+
+.size {
+  background: #d3d3d3;
+  appearance: none;
+  outline: none;
+  opacity: 0.7;
+  width: 100%;
+  height: 5px;
+  opacity: 1;
+  outline: none;
+  margin: 0 auto;
+}

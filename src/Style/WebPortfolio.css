@@ -1,0 +1,28 @@
+.unityCard {
+  padding-top: 25px;
+  min-height: 75vh;
+}
+
+.unityCardMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.unityCardMiddle a {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.unityCardMiddle video {
+  height: 550px;
+}
+
+.caraButtons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}

@@ -1,0 +1,12 @@
+.spread {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.active {
+  color: white !important;
+}
+
+.notactive {
+  color: #0000ee !important;
+}

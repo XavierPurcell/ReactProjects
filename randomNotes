@@ -1,0 +1,260 @@
+/*
+ <button
+              className="ui button"
+              onClick={() => this.SortingAlgorithms(MergeSort)}
+            >
+              Merge Sort
+            </button>*/
+
+/*
+            <input
+            type="text"
+            name="speed"
+            value={this.state.speed}
+            onChange={this.handleChange.bind(this)}
+          />*/
+
+/*
+                        <SortingManager
+                size={this.state.size}
+                handleChangeSize={this.handleChangeSize}
+                handleChange={this.handleChange}
+                speed={this.state.speed}
+                array={array}
+              />
+              */
+
+/*
+             mergeSort2() {
+              if (sorted === true) {
+                this.SortedAnimation();
+                return;
+              }
+          
+              const animationHolder = BubbleSort(this.state.array);
+              const arrayBars = document.getElementsByClassName("array-bar");
+              for (let i = 0; i < animationHolder[0].length; i++) {
+                const barOneIdx = animationHolder[0][i];
+                const barTwoIdx = animationHolder[0][i + 1];
+                const barOneStyle = arrayBars[barOneIdx]
+                  ? arrayBars[barOneIdx].style
+                  : {};
+                const barTwoStyle = arrayBars[barTwoIdx]
+                  ? arrayBars[barOneIdx].style
+                  : {};
+                setTimeout(() => {
+                  barOneStyle.backgroundColor = SECONDARY_COLOR;
+                  barTwoStyle.backgroundColor = SECONDARY_COLOR;
+                  setTimeout(() => {
+                    const barOneStyle = arrayBars[barOneIdx].style;
+                    const barTwoStyle = arrayBars[barTwoIdx].style;
+                    const temp = barOneStyle;
+                    barOneStyle.height = barTwoStyle.height;
+                    barTwoStyle.height = temp.height;
+                  }, (i * ANIMATION_SPEED_MS) / 10);
+                }, (i * ANIMATION_SPEED_MS) / 100);
+                i = i + 1;
+              }
+              sorted = true;
+            }
+          
+            Promise() {
+              const wait = (ms) =>
+                new Promise((resolve) => {
+                  setTimeout(resolve, ms);
+                });
+          
+              wait(5000)
+                .then(() => console.log("5 seconds"))
+                .catch("catch");
+              Promise.resolve().then(() => console.log(2));
+              wait(3000).then(() => console.log(3));
+              console.log(1); // 1, 2, 3, 4
+          
+              const wait2 = (ms) =>
+                new Promise((resolve) => {
+                  setTimeout(resolve, ms);
+                });
+          
+              const arrayBars = document.getElementsByClassName("array-bar");
+              for (let i = 0; i < 25; i++) {
+                wait2(25 * i)
+                  .then(() => {
+                    console.log("wozer seconds " + i * 1000);
+                    let q = arrayBars[i].style;
+                    q.backgroundColor = SECONDARY_COLOR;
+                  })
+                  .catch("caugh");
+              }
+            }
+          
+            SortingAlgorithms2(ourSort) {
+              const animationHolder = ourSort(this.state.array);
+              const wait3 = (ms) =>
+                new Promise((resolve) => {
+                  setTimeout(resolve, ms);
+                });
+          
+              let cool = animationHolder[0].length;
+              //const animationHolder = getBubbleSort(this.state.array);
+          
+              const arrayBars = document.getElementsByClassName("array-bar");
+          
+              for (let i = 0; i < animationHolder[0].length; i++) {
+                const barOneIdx = animationHolder[0][i];
+                const barTwoIdx = animationHolder[0][i + 1];
+                const barOneStyle = arrayBars[barOneIdx]
+                  ? arrayBars[barOneIdx].style
+                  : {};
+          
+                const barTwoStyle = arrayBars[barTwoIdx]
+                  ? arrayBars[barTwoIdx].style
+                  : {};
+          
+                wait3(10 * i)
+                  .then(() => {
+                    //console.log("wozer seconds " + i*1000)
+                    //let f = arrayBars[i].style;
+                    //f.backgroundColor = SECONDARY_COLOR;
+          
+                    let q = barOneStyle.height;
+                    let w = barTwoStyle.height;
+          
+                    let qq = parseInt(q, 10);
+          
+                    let ww = parseInt(w, 10);
+          
+                    if (qq >= ww) {
+                      let temp = barOneStyle.height;
+                      barOneStyle.height = barTwoStyle.height;
+                      //barOneStyle.height = parseInt(barTwoStyle,10);
+                      barTwoStyle.height = temp;
+                      //barTwoStyle.height = parseInt(temp,10);
+                    }
+          
+                    barOneStyle.backgroundColor = SECONDARY_COLOR;
+                    barTwoStyle.backgroundColor = SECONDARY_COLOR;
+          
+                    barOneStyle.backgroundColor = PRIMARY_COLOR;
+                    barTwoStyle.backgroundColor = PRIMARY_COLOR;
+                    cool--;
+                    cool--;
+                    if (cool === 0) {
+                      this.enableSlider();
+                      this.FinishAnimation();
+                      this.setState({ array: animationHolder[1] }); //
+                      console.log("nicew");
+                    }
+                  })
+                  .catch("caugh");
+                i = i + 1;
+              }
+            }
+            */
+
+/*
+
+
+             <div className="container">
+                <h1
+                  className="ui header"
+                  style={{
+                    paddingTop: "24px",
+                    color: "white",
+                    marginTop: "1px",
+                  }}
+                >
+                  Sorting Visualizer
+                </h1>
+                <div className="array-container">
+                  {array.map((value, idx) => (
+                    <div
+                      className="array-bar"
+                      key={idx}
+                      style={{
+                        backgroundColor: PRIMARY_COLOR,
+                        height: `${value}px`,
+                      }}
+                    ></div>
+                  ))}
+                </div>
+                <div className="ui nine column grid blackBC">
+                  <div className="column black">
+                    <h1>Speed</h1>
+                    <input
+                      className="speed"
+                      type="range"
+                      min="6"
+                      max="100"
+                      value={this.state.speed}
+                      onChange={this.handleChange.bind(this)}
+                    ></input>
+                    <div className="twoEnds">
+                      <div>Fast</div> <div>Slow</div>
+                    </div>
+                  </div>
+                  <div className="column black"></div>
+                  <div className="column black">
+                    <h1>Size</h1>
+                    <input
+                      type="range"
+                      className="size"
+                      min="10"
+                      max={this.maxBars()}
+                      value={this.state.size}
+                      onChange={this.handleChangeSize.bind(this)}
+                    ></input>
+                    <div className="twoEnds">
+                      <div>Small</div> <div> Large</div>
+                    </div>
+                  </div>
+                  <div className="column black"></div>
+                  <div className="column black">
+                    <h1>Reset</h1>
+                    <button
+                      className="ui primary button"
+                      onClick={() => this.resetArray()}
+                    >
+                      Generate New Array
+                    </button>
+                  </div>
+                  <div className="column black">
+                    <h3>Merge Sort</h3>
+                    <button
+                      className="ui button"
+                      onClick={() => this.SortingAlgorithms(MergeSort)} //this.mergeSort()}
+                    >
+                      <p>Merge Sort</p>
+                    </button>
+                  </div>
+                  <div className="column black">
+                    <h3>Quick Sort</h3>
+                    <button
+                      className="ui button"
+                      onClick={() => this.SortingAlgorithms(QuickSort)} //}  //this.Promise()
+                    >
+                      <p>Quick Sort </p>
+                    </button>
+                  </div>
+                  <div className="column black">
+                    <h3>Heap Sort</h3>
+                    <button
+                      className="ui button"
+                      onClick={() => this.SortingAlgorithms(HeapSort)}
+                    >
+                      <p>Heap Sort</p>
+                    </button>
+                  </div>
+                  <div className="column black">
+                    <h3>Bubble Sort</h3>
+                    <button
+                      className="ui button"
+                      onClick={() => this.SortingAlgorithms(BubbleSort)}
+                    >
+                      <p>Bubble Sort</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              */
