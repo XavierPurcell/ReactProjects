@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ReactProjects/static/css/main.bbb674c1.chunk.css",
+    "main.js": "/ReactProjects/static/js/main.13168ba4.chunk.js",
+    "main.js.map": "/ReactProjects/static/js/main.13168ba4.chunk.js.map",
+    "runtime-main.js": "/ReactProjects/static/js/runtime-main.f369fc57.js",
+    "runtime-main.js.map": "/ReactProjects/static/js/runtime-main.f369fc57.js.map",
+    "static/css/2.be76dad0.chunk.css": "/ReactProjects/static/css/2.be76dad0.chunk.css",
+    "static/js/2.3cb155a9.chunk.js": "/ReactProjects/static/js/2.3cb155a9.chunk.js",
+    "static/js/2.3cb155a9.chunk.js.map": "/ReactProjects/static/js/2.3cb155a9.chunk.js.map",
+    "static/js/3.834ae5b1.chunk.js": "/ReactProjects/static/js/3.834ae5b1.chunk.js",
+    "static/js/3.834ae5b1.chunk.js.map": "/ReactProjects/static/js/3.834ae5b1.chunk.js.map",
+    "index.html": "/ReactProjects/index.html",
+    "static/css/2.be76dad0.chunk.css.map": "/ReactProjects/static/css/2.be76dad0.chunk.css.map",
+    "static/css/main.bbb674c1.chunk.css.map": "/ReactProjects/static/css/main.bbb674c1.chunk.css.map",
+    "static/js/2.3cb155a9.chunk.js.LICENSE.txt": "/ReactProjects/static/js/2.3cb155a9.chunk.js.LICENSE.txt",
+    "static/media/UQ Res.50f785bf.png": "/ReactProjects/static/media/UQ Res.50f785bf.png",
+    "static/media/semantic.min.css": "/ReactProjects/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/chriss-moss.72f0f0ec.png": "/ReactProjects/static/media/chriss-moss.72f0f0ec.png",
+    "static/media/cs-town-planning.3a434cae.png": "/ReactProjects/static/media/cs-town-planning.3a434cae.png",
+    "static/media/gas-guyz.b5bef6b7.png": "/ReactProjects/static/media/gas-guyz.b5bef6b7.png",
+    "static/media/pasta-poetry.f64facdc.png": "/ReactProjects/static/media/pasta-poetry.f64facdc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f369fc57.js",
+    "static/css/2.be76dad0.chunk.css",
+    "static/js/2.3cb155a9.chunk.js",
+    "static/css/main.bbb674c1.chunk.css",
+    "static/js/main.13168ba4.chunk.js"
+  ]
+}
