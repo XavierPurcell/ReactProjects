@@ -1,6 +1,6 @@
 # React Projects Practise
 
-I originally created this static site to learn React and Javascript.
+I originally created this site to learn React and Javascript.
 
 It slowly been turning into a portfolio and I need to change the url one day.
 
