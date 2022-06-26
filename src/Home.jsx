@@ -38,6 +38,10 @@ class Home extends Component {
     window.location.assign("https://github.com/xavierpurcell");
   };
 
+  handleEntailmentRequestTwitter = (e) => {
+    window.location.assign("https://twitter-clone-delta-three.vercel.app/");
+  };
+
   render() {
     if (width < limit) {
       return (
@@ -67,6 +71,9 @@ class Home extends Component {
             </Route>
             <Route exact path="/unity">
               <UnityManager />
+            </Route>
+            <Route exact path="/twitter-clone-delta-three.vercel.app/">
+              {this.handleEntailmentRequestTwitter}
             </Route>
             <Route exact path="/WebPortfolio">
               <WebPortfolio />
