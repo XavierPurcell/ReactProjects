@@ -23,6 +23,12 @@ export const NavBar = () => {
           name="Movie Search API"
         />
         <Menu.Item as={NavLink} exact to="/Unity" name="Unity Projects" />
+        <Menu.Item
+          as={NavLink}
+          exact
+          to="/twitter-clone-delta-three.vercel.app/"
+          name="Twitter Clone"
+        />
         <Menu.Item as={NavLink} exact to="/WebPortfolio" name="Web Portfolio" />
         <Menu.Item
           as={NavLink}
