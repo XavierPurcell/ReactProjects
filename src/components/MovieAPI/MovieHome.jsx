@@ -35,9 +35,9 @@ class MovieHome extends Component {
     if (this.state.searchTerm.length !== 0) {
       fetch(
         "https://api.themoviedb.org/3/search/movie?api_key=" +
-          this.apiKey +
-          "&query=" +
-          this.state.searchTerm
+        this.apiKey +
+        "&query=" +
+        this.state.searchTerm
       )
         .then((data) => data.json())
         .then((data) => {
@@ -70,9 +70,9 @@ class MovieHome extends Component {
     document.title = "Movie Search API";
     fetch(
       "https://api.themoviedb.org/3/search/movie?api_key=" +
-        this.apiKey +
-        "&query=" +
-        "A"
+      this.apiKey +
+      "&query=" +
+      "A"
     )
       .then((data) => data.json())
       .then((data) => {
@@ -102,11 +102,11 @@ class MovieHome extends Component {
 
     fetch(
       "https://api.themoviedb.org/3/search/movie?api_key=" +
-        this.apiKey +
-        "&query=" +
-        this.state.searchTerm +
-        "&page=" +
-        pageNumber
+      this.apiKey +
+      "&query=" +
+      this.state.searchTerm +
+      "&page=" +
+      pageNumber
     )
       .then((data) => data.json())
       .then((data) => {
@@ -176,33 +176,3 @@ class MovieHome extends Component {
 }
 
 export default MovieHome;
-
-/*
-
-// let w = pageNumber - 1;
-    //console.log(w);
-    // let additionalInfo = 0;
-
-    /*if (pageNumber > 1) {
-      additionalInfo = 2;
-      fetch(
-        "https://api.themoviedb.org/3/search/movie?api_key=" +
-          this.apiKey +
-          "&query=" +
-          this.state.searchTerm +
-          "&page=" +
-          w
-      )
-        .then((data) => data.json())
-        .then((data) => {
-          console.log(data);
-
-          this.setState({ movies: [...data.results], currentPage: pageNumber });
-          //
-
-          for (let i = 0; i < this.state.movies.length - 18; i++) {
-            array1.push(this.state.movies[i]);
-          }
-          this.setState({ movies: array1 });
-        });
-    }*/

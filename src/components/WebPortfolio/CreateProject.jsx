@@ -10,11 +10,11 @@ let CreateProject = (props) => {
     >
       <div style={{ maxWidth: "800px", margin: "auto" }}>
         <div>
-          <h2>Site: {props.titleInfo}</h2>
+          <h2> {props.titleInfo}</h2>
           <h3>
-            URL: <a href={props.urlInfo}>{props.urlInfo}</a>
+            <a href={props.urlInfo}>{props.urlInfo}</a>
           </h3>
-          <h4>Role: {props.roleInfo}</h4>
+          <h4>{props.roleInfo}</h4>
           {props.extraInfo !== "" ? <h4>{props.extraInfo}</h4> : ""}
         </div>
         <img

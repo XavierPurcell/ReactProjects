@@ -45,6 +45,13 @@ class UnityManager extends Component {
         />
 
         <VideoTemplate
+          title1={"Platformer with variable controls"}
+          display="none"
+          link1={"https://gyazo.com/f5c29e9e98d8a0819f2e89c1064e5bf3"}
+          src1={"https://gyazo.com/f5c29e9e98d8a0819f2e89c1064e5bf3.mp4"}
+        />
+
+        <VideoTemplate
           title1={"Lightning Effect"}
           display="none"
           link1={"https://gyazo.com/3106041ee379747640550dc5eac36b38"}
